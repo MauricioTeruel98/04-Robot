@@ -15,7 +15,7 @@ body {
     background-image: url('/img/QmW2XbSiVmktxDwNYfcFBGiqXYw4hSuM7VmLjHyR8o5Nci.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 1000px;
 }
 
 .cabecera {
@@ -198,14 +198,18 @@ img {
 }
 
 .pie {
+    width: 100vw;
     background: rgb(255, 255, 255);
-    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(46, 97, 237, 1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(46, 97, 237, 1) 100%);
     color: #ccc;
-    height: 70px;
+    height: 50px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    position: fixed;
+    bottom: 0;
+}
+
+.pie h3{
+    margin-top: 20px;
 }
 
 @keyframes mover {
