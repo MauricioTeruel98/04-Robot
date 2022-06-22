@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+}
+
+.fondo {
+    background-image: url('/img/QmW2XbSiVmktxDwNYfcFBGiqXYw4hSuM7VmLjHyR8o5Nci.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.cabecera {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(46, 97, 237, 1) 100%);
+    color: #ccc;
+    height: 70px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.cabecera h3 {
+    margin: 0;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.container {
+    position: relative;
+    height: 500px;
+    width: 700px;
+    margin: 200px auto;
+    background: rgb(73, 114, 226);
+    background: radial-gradient(circle, rgba(73, 114, 226, 1) 0%, rgba(255, 255, 255, 0) 56%);
+    padding: 30px;
+    top: -75%;
+    animation: mover-cuerpo infinite 3s;
+}
+
+.palpito {
+    margin: 200px auto;
+    height: 500px;
+    width: 700px;
+    background: rgb(73, 114, 226);
+    background: radial-gradient(circle, rgba(96, 235, 20, 1) 0%, rgba(255, 255, 255, 0) 56%);
+    animation: latir infinite 5s linear;
+}
+
+@keyframes latir {
+    0% {
+        transform: scale(1.5, 1.5);
+    }
+
+    50% {
+        transform: scale(1.02, 1.02);
+    }
+
+    55% {
+        transform: scale(0.95, 0.95);
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+img {
+    height: 250px;
+}
+
+.cabeza {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    top: 15px;
+    right: 7.8%;
+    z-index: 10;
+}
+
+.pecho{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 48% 52% 51% 49% / 13% 12% 88% 87% ;
+    background: rgb(2, 0, 36);
+    left: 292px;
+    top: 100px;
+    z-index: 10;
+    animation: cambiar-color infinite 3s linear;
+}
+
+.cuerpo {
+    width: 230px;
+    height: 170px;
+    background: rgb(28, 166, 181);
+    background: linear-gradient(16deg, rgba(28, 166, 181, 1) 0%, rgba(96, 235, 20, 1) 100%);
+    position: relative;
+    left: 50%;
+    border-radius: 50px 50px 140px 140px;
+    transform: translate(-50%);
+    z-index: 9;
+}
+
+.hombroIzq {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: rgb(2, 0, 36);
+    border-radius: 50%;
+    top: -35%;
+    left: 27%;
+    animation: mover-brazo-izq infinite 2s linear;
+}
+
+.brazoIzq {
+    width: 50px;
+    height: 150px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    position: relative;
+    top: 32%;
+    left: -5px;
+    border-radius: 54% 46% 74% 26% / 33% 0% 100% 67%;
+    z-index: 5;
+}
+
+.hombroDer {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: rgb(2, 0, 36);
+    border-radius: 50%;
+    top: -46%;
+    left: 65%;
+    z-index: 8;
+    animation: mover-brazo-der infinite 2s linear;
+}
+
+.brazoDer {
+    width: 50px;
+    height: 150px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    position: relative;
+    top: 15px;
+    left: 10px;
+    border-radius: 50% 50% 30% 70% / 0% 40% 60% 100%;
+}
+
+.propulsor1 {
+    background-color: rgba(0, 212, 255, 1);
+    width: 60px;
+    height: 40px;
+    position: relative;
+    top: -90px;
+    left: 287px;
+    transform: translate(40%);
+    border-radius: 50% 50% 48% 52% / 23% 23% 77% 77% ;
+    animation: mover infinite 2s linear;
+}
+
+.propulsor2 {
+    background-color: rgba(0, 212, 255, 1);
+    width: 50px;
+    height: 30px;
+    position: relative;
+    top: -80px;
+    left: 293px;
+    transform: translate(40%);
+    border-radius: 50% 50% 48% 52% / 23% 23% 77% 77% ;
+    animation: mover infinite 2s linear;
+}
+
+.propulsor3 {
+    background-color: rgba(0, 212, 255, 1);
+    width: 30px;
+    height: 20px;
+    position: relative;
+    top: -70px;
+    left: 303px;
+    transform: translate(40%);
+    border-radius: 50% 50% 48% 52% / 23% 23% 77% 77% ;
+    animation: mover infinite 2s;
+}
+
+.pie {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(46, 97, 237, 1) 100%);
+    color: #ccc;
+    height: 70px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+@keyframes mover{
+    0%,
+    100%{
+        transform: translateY(-20%);
+    }
+    50%{
+        transform: translateY(20%);
+    }
+}
+
+@keyframes mover-cuerpo{
+    0%,
+    100%{
+        transform: translateY(-2%);
+    }
+    50%{
+        transform: translateY(2%);
+    }
+}
+
+@keyframes cambiar-color{
+    0%,
+    100%{
+        background-color: rgb(2, 0, 36);
+    }
+    50%{
+        background-color: lime;
+    }
+}
+
+@keyframes mover-brazo-der{
+    0%,
+    100%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes mover-brazo-izq{
+    0%,
+    100%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+}
