@@ -15,7 +15,7 @@ body {
     background-image: url('/img/QmW2XbSiVmktxDwNYfcFBGiqXYw4hSuM7VmLjHyR8o5Nci.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 1440px;
 }
 
 .cabecera {
@@ -43,7 +43,7 @@ body {
     background: rgb(73, 114, 226);
     background: radial-gradient(circle, rgba(73, 114, 226, 1) 0%, rgba(255, 255, 255, 0) 56%);
     padding: 30px;
-    top: -75%;
+    top: -55%;
     animation: mover-cuerpo infinite 3s;
 }
 
@@ -270,4 +270,20 @@ img {
     50% {
         transform: rotate(5deg);
     }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #030303;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(128, 128, 128, 0.164);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #04bfe421;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(122, 116, 116);
 }
