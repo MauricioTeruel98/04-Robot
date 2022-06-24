@@ -12,7 +12,7 @@ body {
 }
 
 .fondo {
-    background-image: url('/img/QmW2XbSiVmktxDwNYfcFBGiqXYw4hSuM7VmLjHyR8o5Nci.jpg');
+    background-image: url('./img/QmW2XbSiVmktxDwNYfcFBGiqXYw4hSuM7VmLjHyR8o5Nci.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 1440px;
